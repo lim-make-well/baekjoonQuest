@@ -89,3 +89,32 @@ class smallerX{
     }
 
 }
+
+class sum5{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        while(true) {
+            int x1 = sc.nextInt();
+            int x2 = sc.nextInt();
+
+            if(x1 == 0 && x2 == 0) break;
+
+        }
+    }
+
+}
+
+class ovenTimer{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        int hour            = sc.nextInt();
+        int min             = sc.nextInt();
+        int cookTime        = sc.nextInt();
+        int cookAfterHour   = (hour + (cookTime + min) / 60 ) % 24;
+        int cookAfterMin    = (cookTime + min) % 60;
+
+        System.out.printf("%d %d \n", cookAfterHour, cookAfterMin);
+    }
+}
+
